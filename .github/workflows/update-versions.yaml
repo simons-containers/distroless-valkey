@@ -23,7 +23,7 @@ jobs:
           timeout_minutes: 10
           command: |
             set -uo pipefail
-            ZLIB=$(curl -s https://zlib.net/ \
+            ZLIB=$(curl -sf https://zlib.net/ \
               | grep -o 'zlib-[0-9]\+\.[0-9]\+\(\.[0-9]\+\)\?\.tar\.gz' \
               | sed 's/zlib-//; s/\.tar\.gz//' \
               | sort -V | tail -n 1)
