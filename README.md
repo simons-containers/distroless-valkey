@@ -1,3 +1,7 @@
+![Latest](https://ghcr-badge.egpl.dev/simons-containers/distroless-valkey/latest_tag?ignore=latest,sha256*&label=latest)  
+![Size](https://ghcr-badge.egpl.dev/simons-containers/distroless-valkey/size?tag=latest)  
+![Tags](https://ghcr-badge.egpl.dev/simons-containers/distroless-valkey/tags?ignore=latest,sha256*)  
+
 # Distroless Valkey container
 
 Bare-bones distroless Valkey container image.
