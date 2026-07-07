@@ -1,3 +1,5 @@
+[![Current Version](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/release.svg)](https://github.com/simons-containers/distroless-valkey/pkgs/container/distroless-valkey) [![Tags](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/tags.svg)](https://github.com/simons-containers/distroless-valkey/pkgs/container/distroless-valkey) <br> ![Current Size](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/size.svg) ![Wasted Size](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/wasted.svg) ![Efficiency](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/efficiency.svg) <br> ![Critical](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/critical.svg) ![High](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/high.svg) ![Medium](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/medium.svg) ![Low](https://raw.githubusercontent.com/simons-containers/distroless-valkey/badges/.badges/main/low.svg) <br> [![Publish Workflow](https://img.shields.io/github/actions/workflow/status/simons-containers/distroless-valkey/deploy.yaml?label=Publish%20Workflow&logo=github)](https://github.com/simons-containers/distroless-valkey/actions/workflows/deploy.yaml) [![Update Workflow](https://img.shields.io/github/actions/workflow/status/simons-containers/distroless-valkey/update-versions.yaml?label=Update%20Workflow&logo=github)](https://github.com/simons-containers/distroless-valkey/actions/workflows/update-versions.yaml)
+
 # Distroless Valkey container
 
 Bare-bones distroless Valkey container image.
@@ -12,22 +14,6 @@ Example:
 docker run -it --rm -v ./data:/var/lib/valkey \
   -v valkey.conf:/etc/valkey/server.conf \
   ghcr.io/simons-containers/distroless-valkey:latest
-```
-
-## Building
-
-| Arg | Description |
-|---|---|
-| `VALKEY_VERSION` | Version of Valkey to use
-| `ZLIB_VERSION` | Version of zlib to use
-| `OPENSSL_VERSION` | Version of openssl to use
-
-Build container using build-args from versions.yaml:
-
-```bash
-docker build -t \
-  distroless-valkey:$(yq -r .valkey versions.yaml) \
-  $(yq -r 'to_entries | .[] | "--build-arg \(.key | ascii_upcase)_VERSION=\(.value)"' versions.yaml) -f Containerfile .
 ```
 
 ## License
