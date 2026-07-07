@@ -1,0 +1,7 @@
+ignore:
+  # CVE applies toa Debian specific packaging issue
+  - vulnerability: CVE-2022-0543
+  # CVE applies to library dbghelp.dll on Windows
+  - vulnerability: CVE-2022-3734
+  # CVE is patched in 9.0 and later https://github.com/valkey-io/valkey/blob/9.0/src/networking.c#L1116
+  - vulnerability: CVE-2025-49112
