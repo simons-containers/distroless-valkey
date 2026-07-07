@@ -4,9 +4,9 @@ ARG VALKEY_VERSION
 ARG ZLIB_VERSION
 ARG OPENSSL_VERSION
 
-ARG OPENSSL_SOURCE=https://github.com/openssl/openssl/releases/download/openssl-${OPENSSL_VERSION}/openssl-${OPENSSL_VERSION}.tar.gz
-ARG ZLIB_SOURCE=https://zlib.net/zlib-${ZLIB_VERSION}.tar.gz
-ARG VALKEY_SOURCE=https://github.com/valkey-io/valkey/archive/refs/tags/${VALKEY_VERSION}.tar.gz
+ARG OPENSSL_SOURCE
+ARG ZLIB_SOURCE
+ARG VALKEY_SOURCE
 
 RUN pacman -Sy --noconfirm python >/dev/null
 
