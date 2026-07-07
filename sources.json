@@ -1,0 +1,23 @@
+{
+  "valkey": {
+    "version": "9.1.0",
+    "purl": "pkg:generic/valkey",
+    "source": {
+      "url_pattern": "https://github.com/valkey-io/valkey/archive/refs/tags/{version}.tar.gz"
+    }
+  },
+  "zlib": {
+    "version": "1.3.2",
+    "purl": "pkg:generic/zlib",
+    "source": {
+      "url_pattern": "https://zlib.net/zlib-{version}.tar.gz"
+    }
+  },
+  "openssl": {
+    "version": "3.6.3",
+    "purl": "pkg:generic/openssl",
+    "source": {
+      "url_pattern": "https://www.openssl.org/source/openssl-{version}.tar.gz"
+    }
+  }
+}
