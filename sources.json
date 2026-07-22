@@ -1,6 +1,6 @@
 {
   "valkey": {
-    "version": "9.1.0",
+    "version": "9.1.1",
     "purl": "pkg:generic/valkey",
     "source": {
       "url_pattern": "https://github.com/valkey-io/valkey/archive/refs/tags/{version}.tar.gz"
