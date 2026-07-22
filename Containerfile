@@ -47,7 +47,7 @@ RUN rm -fr \
     /base/usr/lib/pkgconfig \
     /base/usr/lib/cmake
 
-FROM ghcr.io/simons-containers/distroless-glibc
+FROM ghcr.io/simons-containers/distroless-glibc:2.43
 
 ARG VALKEY_VERSION
 ARG ZLIB_VERSION
