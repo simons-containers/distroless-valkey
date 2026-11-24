@@ -1,4 +1,4 @@
-FROM archlinux:base-devel-20260308.0.497099 AS builder
+FROM archlinux:base-devel-20261122.0.629543 AS builder
 
 ARG VALKEY_VERSION
 ARG ZLIB_VERSION
